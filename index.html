@@ -65,15 +65,45 @@
     </main>
 
     <!-- Conceptual questions and answers -->
-    <section>
+    <section class="qna">
         <h1> Q-1: How does JavaScript work? </h1>
         <p>
+            JS is client side scripted language. It runs in the browser. Every browser has a JS engine like Google
+            Chrome has V8 Engine.
 
+            JS code has been parsed by the parser. It checks the JS code line by line as JS is a interpreted language.
+            Parser converts JS code into data structure called as Abstract Syntax Tree (AST). AST converts JS code into
+            machine language as machine only understands machine language. After converting into Machine Code, JS code
+            has been run in the browser.
         </p>
 
         <h1> Q-2: What does JS event loop do? </h1>
         <p>
+            In JavaScript, an event loop is a fundamental concept related to asynchronous programming.
 
+            There are three environment in the Even Loop when asynchronous JS running in the background: Execution
+            Stack, Web APIs, Message Queue
+
+            <br> <br>
+
+            <strong>Execution Stack:</strong> When a function is called, an execution context will be added in the
+            execution stack. After
+            displaying the output in the console tab, the execution context will be popped out from the stack
+
+            <br> <br>
+
+            <strong>Web API:</strong> When JS code has setTimeout(), DOM , Fetch / Ajax / API calls. Then it is called
+            asynchronous
+            programming. That particular code will wait for a specific time. After completing the time period, the code
+            will run.
+
+            <br> <br>
+
+            <strong> Message Queue:</strong> After completing the time period, the code will move into message queue.
+            Event Loop will
+            check whether anything is available in the message queue or not. If anything available, then the code will
+            move to the execution stack and will push a execution context in the stack. After displaying the output, it
+            will be popped out from the stack
         </p>
 
         <h1> Q-3: Differences between Local and Session storage? </h1>
